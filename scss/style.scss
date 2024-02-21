@@ -1,0 +1,22 @@
+@import 'base/reset';
+/* 
+@import 'base/utils';
+@import 'base/vars';
+*/
+
+/* components */
+@import 'components/navbar';
+@import 'components/footer';
+@import 'layout/index';
+@import 'components/footer';
+
+/* layout */
+
+@import 'layout/servicios';
+@import 'layout/nosotros';
+@import 'layout/galeria';
+@import 'layout/contacto';
+
+/* media */
+
+@import 'components/media';

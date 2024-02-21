@@ -1,0 +1,456 @@
+/* 320 */
+
+@media (min-width:320px) {
+  .nav-top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 5% 15px 5%;
+  }
+
+  .nav-top-list {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+
+  .intro {
+    h1 {
+      padding: 0 0 0 5%;
+    }
+
+    p {
+      padding: 0 5% 0 10%;
+    }
+  }
+
+  .container-clase {
+    padding: 10px;
+  }
+
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+
+    .servicios-box {
+      min-height: 100%;
+      max-height: 100%;
+      width: 300px;
+    }
+  }
+}
+
+/* 768 */
+
+@media (min-width:768px) {
+
+  /* navbar - navtop */
+
+  .nav-top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 50px 15px 50px;
+  }
+
+  .nav-top-list {
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* main */
+
+  .intro {
+    background-image: url('../assets/imges/mascotas.jpg');
+    align-items: center;
+    min-height: 600px;
+    color: black;
+
+    h1 {
+      font-size: 50px;
+      padding: 30px 10% 0 10%;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      font-size: 25px;
+      padding: 0 10% 0 10%;
+    }
+  }
+
+  .container-clase {
+    align-items: center;
+    padding: 30px;
+
+
+    img {
+      height: 400px;
+      width: 700px;
+    }
+  }
+
+  /* cards */
+
+  .container-card {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .intro-servicios {
+    text-align: left;
+
+    h2 {
+      text-align: left;
+    }
+  }
+
+  /* servicios */
+
+  .intro-servicios {
+    text-align: left;
+    padding: 30px 0 30px 50px;
+  }
+
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+    .servicios-box {
+      text-align: left;
+      width: 300px;
+    }
+  }
+
+  /* nosotros */
+
+  .nosotros-container {
+    min-height: 100%;
+    max-height: 100%;  
+    padding: 30px 10% 30px 10%;
+  }
+
+  .nosotros-box {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+  }
+
+  .nosotros-box-reverse {
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+
+  }
+
+  .nosotros-texto {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-imagen {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  .equipo-texto {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .equipo-imagen {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  .centro-texto {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+
+  .centro-imagen {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  /* contacto */
+
+  .mapa{
+    min-height: 400px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 20px;
+    padding: 30px 10% 30px 10%;
+    gap: 20px;
+    align-items: center;
+
+    h3 {
+      padding: 0px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    ul {
+      width: 100%;
+      list-style: none;
+      text-align: center;
+    }
+  }
+
+}
+
+
+/* 1200*/
+
+@media (min-width:1200px) {
+
+  /* clase */
+
+  .container-clase {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 30px;
+
+    img {
+      height: 400px;
+      width: 700px;
+      border-radius: 10px;
+      border: solid 2px black;
+      padding: 10px;
+    }
+
+    .clase {
+      padding-left: 20px;
+      margin: 0px;
+      width: 700px;
+
+      h2 {
+        text-align: center;
+        padding: 0 0 20px 0;
+      }
+
+      p {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  .intro-servicios {
+    text-align: left;
+    padding: 30px 0 30px 50px;
+  }
+
+  /* servicios */
+
+  .servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+
+    .servicios-box {
+      text-align: left;
+      width: 300px;
+    }
+  }
+
+  /* nosotros */
+
+  .nosotros-container {
+    min-height: 100%;
+    max-height: 100%;
+    padding: 30px 13% 30px 13%;
+  }
+
+  .nosotros-box {
+    height: 400;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .nosotros-box-reverse {
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+
+  }
+
+  .nosotros-texto {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-imagen {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  .equipo-texto {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(116, 110, 110);
+  }
+
+  .equipo-imagen {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+  .centro-texto {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(199, 182, 182);
+  }
+
+  .centro-imagen {
+    width: 50%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  /* galeria */
+
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+
+    img {
+      width: 100%;
+      height: 300px;          
+    }
+  }
+
+  .expand {
+    grid-column: span 2;
+  }
+
+  /* contacto */
+
+  .mapa {
+    min-height: 400px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 20px;
+    padding: 30px 13.5% 30px 13.5%;
+    align-items: center;
+
+    h3 {
+      padding: 0px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    ul {
+      width: 100%;
+      list-style: none;
+      text-align: center;
+    }
+  }
+
+  .carousel {
+    height: 400px;
+    width: 700px;
+  }
+
+}

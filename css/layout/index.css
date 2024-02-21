@@ -1,0 +1,113 @@
+/* main */
+.intro {
+  background-image: url("../assets/imges/640_480.jpg");
+  background-size: cover;
+  min-height: 600px;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  color: white;
+  word-wrap: break-word;
+}
+.intro h1 {
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+.intro p {
+  font-size: 20px;
+  text-align: center;
+  height: 100%;
+}
+
+/* cards */
+.container-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 8px;
+}
+
+.card {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+/* clase */
+.container-clase {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 233, 233);
+  min-height: 400px;
+  max-height: 100%;
+  word-wrap: break-word;
+  align-items: center;
+}
+.container-clase img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  border: solid 2px black;
+  padding: 10px;
+}
+.container-clase .clase {
+  padding: 10px;
+}
+.container-clase .clase h2 {
+  text-align: center;
+  margin: 10px;
+}
+.container-clase .clase p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.carousel {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.carousel .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  animation: carousel 15s infinite linear;
+  object-fit: cover;
+}
+.carousel .slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.carousel .slide:nth-child(2) {
+  animation-delay: 5s;
+}
+.carousel .slide:nth-child(3) {
+  animation-delay: 10s;
+}
+.carousel .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes carousel {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

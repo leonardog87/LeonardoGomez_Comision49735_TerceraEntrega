@@ -1,0 +1,37 @@
+.intro-servicios {
+  text-align: center;
+  background-color: rgb(212, 168, 168);
+  padding: 30px 0 30px 0;
+  text-decoration: 2px underline black;
+  word-wrap: break-word;
+}
+
+.servicios {
+  background-color: rgb(223, 217, 217);
+  color: rgba(0, 0, 0, 0.685);
+  gap: 50px;
+  padding: 30px 10% 30px 10%;
+  place-items: center;
+  word-wrap: break-word;
+}
+
+.servicios-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  max-height: 100%;
+  text-align: center;
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.servicios-box:hover {
+  color: black;
+}
+.servicios-box h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+/*# sourceMappingURL=servicios.css.map */
