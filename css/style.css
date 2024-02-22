@@ -231,6 +231,7 @@ footer {
   min-height: 600px;
   color: black;
   background-size: cover;
+  word-wrap: break-word;
 }
 .servicios-intro h1 {
   font-size: 50px;
@@ -285,6 +286,7 @@ footer {
   min-height: 600px;
   color: black;
   background-size: cover;
+  word-wrap: break-word;
 }
 .nosotros-intro h1 {
   font-size: 50px;
@@ -384,6 +386,7 @@ footer {
   min-height: 600px;
   color: black;
   background-size: cover;
+  word-wrap: break-word;
 }
 .galeria-intro h1 {
   font-size: 50px;
@@ -423,6 +426,7 @@ footer {
   min-height: 600px;
   color: black;
   background-size: cover;
+  word-wrap: break-word;
 }
 .contacto-intro h1 {
   font-size: 50px;

@@ -5,6 +5,7 @@
   min-height: 600px;
   color: black;
   background-size: cover;
+  word-wrap: break-word;
 }
 .galeria-intro h1 {
   font-size: 50px;

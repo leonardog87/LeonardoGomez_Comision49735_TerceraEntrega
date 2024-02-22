@@ -4,6 +4,7 @@
   min-height: 600px;
   color: black;
   background-size: cover;
+  word-wrap: break-word;
 }
 .nosotros-intro h1 {
   font-size: 50px;
