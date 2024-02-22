@@ -464,6 +464,74 @@ footer {
     font-size: 25px;
     padding: 0 10% 0 10%;
   }
+  .contacto-intro {
+    background-image: url("../assets/imges/contacto-intro.jpg");
+    align-items: center;
+    min-height: 600px;
+    color: black;
+    background-size: cover;
+  }
+  .contacto-intro h1 {
+    font-size: 50px;
+    padding: 30px 10% 0 10%;
+    text-align: center;
+  }
+  .contacto-intro p {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 10% 0 10%;
+  }
+  .galeria-intro {
+    background-image: url("../assets/imges/galeria-intro.jpg");
+    align-items: center;
+    min-height: 600px;
+    color: black;
+    background-size: cover;
+  }
+  .galeria-intro h1 {
+    font-size: 50px;
+    padding: 30px 10% 0 10%;
+    text-align: center;
+  }
+  .galeria-intro p {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 10% 0 10%;
+  }
+  .servicios-intro {
+    background-image: url("../assets/imges/servicios-intro.jpg");
+    align-items: center;
+    min-height: 600px;
+    color: black;
+    background-size: cover;
+  }
+  .servicios-intro h1 {
+    font-size: 50px;
+    padding: 30px 10% 0 10%;
+    text-align: center;
+  }
+  .servicios-intro p {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 10% 0 10%;
+  }
+  .nosotros-intro {
+    background-image: url("../assets/imges/nosotros-intro.jpg");
+    align-items: center;
+    min-height: 600px;
+    color: black;
+    background-size: cover;
+  }
+  .nosotros-intro h1 {
+    font-size: 50px;
+    padding: 30px 10% 0 10%;
+    text-align: center;
+  }
+  .nosotros-intro p {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 10% 0 10%;
+  }
   .container-clase {
     align-items: center;
     padding: 30px;
