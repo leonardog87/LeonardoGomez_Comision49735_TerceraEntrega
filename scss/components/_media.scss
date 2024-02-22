@@ -29,7 +29,7 @@
     }
   }
 
-  .container-clase {
+  .container-carousel {
     padding: 10px;
   }
 
@@ -92,86 +92,54 @@
   }
 
   .contacto-intro {
-    background-image: url('../assets/imges/contacto-intro.jpg');
-    align-items: center;
-    min-height: 600px;
-    color: black;
-    background-size: cover;
-
     h1 {
-      font-size: 50px;
-      padding: 30px 10% 0 10%;
-      text-align: center;
+      padding: 30px 10% 0 5%;
+      text-align: left;
     }
 
     p {
-      text-align: center;
-      font-size: 25px;
-      padding: 0 10% 0 10%;
+      width: 800px;
+      text-align: left;
     }
   }
 
   .galeria-intro {
-    background-image: url('../assets/imges/galeria-intro.jpg');
-    align-items: center;
-    min-height: 600px;
-    color: black;
-    background-size: cover;
-
     h1 {
-      font-size: 50px;
-      padding: 30px 10% 0 10%;
-      text-align: center;
+      padding: 30px 10% 0 5%;
+      text-align: left;
     }
 
     p {
-      text-align: center;
-      font-size: 25px;
-      padding: 0 10% 0 10%;
+      width: 800px;
+      text-align: left;
     }
   }
 
   .servicios-intro {
-    background-image: url('../assets/imges/servicios-intro.jpg');
-    align-items: center;
-    min-height: 600px;
-    color: black;
-    background-size: cover;
-
     h1 {
-      font-size: 50px;
-      padding: 30px 10% 0 10%;
-      text-align: center;
+      padding: 30px 10% 0 5%;
+      text-align: left;
     }
 
     p {
-      text-align: center;
-      font-size: 25px;
-      padding: 0 10% 0 10%;
+      width: 800px;
+      text-align: left;
     }
   }
 
   .nosotros-intro {
-    background-image: url('../assets/imges/nosotros-intro.jpg');
-    align-items: center;
-    min-height: 600px;
-    color: black;
-    background-size: cover;
-
     h1 {
-      font-size: 50px;
-      padding: 30px 10% 0 10%;
-      text-align: center;
+      padding: 30px 10% 0 5%;
+      text-align: left;
     }
 
     p {
-      text-align: center;
-      font-size: 25px;
-      padding: 0 10% 0 10%;
+      text-align: left;
+      width: 800px;
     }
   }
 
-  .container-clase {
+  .container-carousel {
     align-items: center;
     padding: 30px;
 
@@ -189,20 +157,7 @@
     padding: 20px;
   }
 
-  .intro-servicios {
-    text-align: left;
-
-    h2 {
-      text-align: left;
-    }
-  }
-
   /* servicios */
-
-  .intro-servicios {
-    text-align: left;
-    padding: 30px 0 30px 50px;
-  }
 
   .servicios {
     display: grid;
@@ -217,12 +172,6 @@
   }
 
   /* nosotros */
-
-  .nosotros-container {
-    min-height: 100%;
-    max-height: 100%;  
-    padding: 30px 10% 30px 10%;
-  }
 
   .nosotros-box {
     height: 400px;
@@ -284,7 +233,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+
   }
 
   .centro-imagen {
@@ -298,22 +247,12 @@
   }
 
   .galeria {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-
-
-    img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
   }
 
   /* contacto */
 
-  .mapa{
+  .mapa {
     min-height: 400px;
     max-height: 100%;
     display: flex;
@@ -347,9 +286,9 @@
 
 @media (min-width:1200px) {
 
-  /* clase */
+  /* carousel */
 
-  .container-clase {
+  .container-carousel {
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -364,7 +303,7 @@
       padding: 10px;
     }
 
-    .clase {
+    .text {
       padding-left: 20px;
       margin: 0px;
       width: 700px;
@@ -394,7 +333,6 @@
     grid-template-rows: auto;
     gap: 10px;
 
-
     .servicios-box {
       text-align: left;
       width: 300px;
@@ -404,21 +342,17 @@
   /* nosotros */
 
   .nosotros-container {
-    min-height: 100%;
-    max-height: 100%;
     padding: 30px 13% 30px 13%;
   }
 
   .nosotros-box {
-    height: 400;
-    display: flex;
+    height: 400px;
     flex-direction: row;
     align-items: stretch;
   }
 
   .nosotros-box-reverse {
     height: 400px;
-    display: flex;
     flex-direction: row-reverse;
     align-items: stretch;
 
@@ -427,73 +361,34 @@
   .nosotros-texto {
     text-align: center;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   .logo-imagen {
     width: 50%;
     height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
 
   .equipo-texto {
-    text-align: center;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(116, 110, 110);
   }
 
   .equipo-imagen {
     width: 50%;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
-
-  .centro-texto {
-    text-align: center;
+  .centro-texto {   
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(199, 182, 182);
   }
 
   .centro-imagen {
     width: 50%;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   /* galeria */
 
   .galeria {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-
-    img {
-      width: 100%;
-      height: 300px;          
-    }
   }
 
   .expand {

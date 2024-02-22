@@ -17,14 +17,6 @@
   padding: 0 10% 0 10%;
 }
 
-.intro-servicios {
-  text-align: center;
-  background-color: rgb(212, 168, 168);
-  padding: 30px 0 30px 0;
-  text-decoration: 2px underline black;
-  word-wrap: break-word;
-}
-
 .servicios {
   background-color: rgb(223, 217, 217);
   color: rgba(0, 0, 0, 0.685);

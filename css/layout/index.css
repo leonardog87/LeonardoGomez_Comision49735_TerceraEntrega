@@ -15,9 +15,10 @@
   font-weight: bold;
   padding: 10px;
   text-align: center;
+  font-size: 50px;
 }
 .intro p {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   height: 100%;
 }
@@ -38,7 +39,7 @@
 }
 
 /* clase */
-.container-clase {
+.container-carousel {
   display: flex;
   flex-direction: column;
   background-color: rgb(233, 233, 233);
@@ -47,21 +48,21 @@
   word-wrap: break-word;
   align-items: center;
 }
-.container-clase img {
+.container-carousel img {
   height: 300px;
   width: 100%;
   border-radius: 10px;
   border: solid 2px black;
   padding: 10px;
 }
-.container-clase .clase {
+.container-carousel .text {
   padding: 10px;
 }
-.container-clase .clase h2 {
+.container-carousel .text h2 {
   text-align: center;
   margin: 10px;
 }
-.container-clase .clase p {
+.container-carousel .text p {
   font-size: 20px;
   text-align: center;
 }

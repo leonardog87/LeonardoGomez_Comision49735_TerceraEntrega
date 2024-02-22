@@ -17,10 +17,11 @@
         font-weight: bold;
         padding: 10px;
         text-align: center;
+        font-size: 50px;
     }
 
     p {
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
         height: 100%;
     }
@@ -45,7 +46,7 @@
 
 /* clase */
 
-.container-clase {
+.container-carousel {
     display: flex;
     flex-direction: column;
     background-color: rgb(233, 233, 233);
@@ -62,7 +63,7 @@
         padding: 10px;
     }
 
-    .clase {
+    .text {
         padding: 10px;
 
         h2 {
