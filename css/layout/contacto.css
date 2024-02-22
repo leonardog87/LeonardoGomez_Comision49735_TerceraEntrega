@@ -1,4 +1,22 @@
 /* contacto */
+.contacto-intro {
+  background-image: url("../assets/imges/contacto-intro.jpg");
+  align-items: center;
+  min-height: 600px;
+  color: black;
+  background-size: cover;
+}
+.contacto-intro h1 {
+  font-size: 50px;
+  padding: 30px 10% 0 10%;
+  text-align: center;
+}
+.contacto-intro p {
+  text-align: center;
+  font-size: 25px;
+  padding: 0 10% 0 10%;
+}
+
 .contacto {
   min-height: 400px;
   max-height: 100%;

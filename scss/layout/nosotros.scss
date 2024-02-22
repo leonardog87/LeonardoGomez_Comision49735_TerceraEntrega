@@ -1,3 +1,23 @@
+.nosotros-intro {
+  background-image: url('../assets/imges/nosotros-intro.jpg');
+  align-items: center;
+  min-height: 600px;
+  color: black;
+  background-size: cover;
+
+  h1 {
+    font-size: 50px;
+    padding: 30px 10% 0 10%;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 10% 0 10%;
+  }
+}
+
 .nosotros-container {
     min-height: 100%;
     max-height: 100%;
