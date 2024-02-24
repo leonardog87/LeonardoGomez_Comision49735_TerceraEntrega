@@ -47,9 +47,9 @@
   }
 }
 
-/* 768 */
+/* 1023 */
 
-@media (min-width:768px) {
+@media (min-width:1023px) {
 
   /* navbar - navtop */
 
@@ -286,6 +286,15 @@
 
 @media (min-width:1200px) {
 
+  /* navtop */
+
+  .nav-top {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   /* carousel */
 
   .container-carousel {
@@ -346,7 +355,8 @@
   }
 
   .nosotros-box {
-    height: 400px;
+    height: 100%;
+    width: 100%;
     flex-direction: row;
     align-items: stretch;
   }
@@ -377,7 +387,7 @@
     width: 50%;
   }
 
-  .centro-texto {   
+  .centro-texto {
     width: 50%;
   }
 
