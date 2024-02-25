@@ -2,29 +2,10 @@
 
 
 .intro {
+    @include intro-banner;
     background-image: url('../assets/imges/640_480.jpg');
-    background-size: cover;
-    min-height: 600px;
-    max-height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
     color: white;
-    word-wrap: break-word;
-
-    h1 {
-        font-weight: bold;
-        padding: 10px;
-        text-align: center;
-        font-size: 50px;
-    }
-
-    p {
-        font-size: 25px;
-        text-align: center;
-        height: 100%;
-    }
+    animation: $animation-title;
 }
 
 /* cards */
@@ -43,13 +24,12 @@
     text-align: center;
 }
 
-
-/* clase */
+/* carousel */
 
 .container-carousel {
     display: flex;
     flex-direction: column;
-    background-color: rgb(233, 233, 233);
+    background-color: $color-container;
     min-height: 400px;
     max-height: 100%;
     word-wrap: break-word;
@@ -89,7 +69,7 @@
         height: 100%;
         position: absolute;
         opacity: 0;
-        animation: carousel 15s infinite linear;
+        animation: carousel 13s infinite linear;
         object-fit: cover;
 
         &:nth-child(1) {
@@ -129,3 +109,4 @@
         opacity: 0;
     }
 }
+

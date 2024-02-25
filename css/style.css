@@ -1,3 +1,10 @@
+/* 
+
+*/
+/* base */
+/* resoluciones */
+/* colors */
+/* animacion */
 /* reset */
 * {
   padding: 0;
@@ -5,10 +12,14 @@
   box-sizing: border-box;
 }
 
-/* 
-@import 'base/utils';
-@import 'base/vars';
-*/
+@keyframes title-animation {
+  from {
+    color: transparent;
+  }
+  to {
+    color: black;
+  }
+}
 /* components */
 /* TOP navbar */
 .nav-top {
@@ -27,7 +38,7 @@
   background: linear-gradient(black, black);
   background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: 0% 10%;
+  background-size: 0 10%;
   transition: background-size 1s;
 }
 .nav-top p:hover {
@@ -101,27 +112,27 @@ footer {
 
 /* main */
 .intro {
-  background-image: url("../assets/imges/640_480.jpg");
   background-size: cover;
   min-height: 600px;
   max-height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   padding: 10px;
-  color: white;
+  color: black;
   word-wrap: break-word;
+  background-image: url("../assets/imges/640_480.jpg");
+  color: white;
+  animation: title-animation 7s forwards;
 }
 .intro h1 {
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
   font-size: 50px;
+  padding: 30px 10% 0 10%;
+  text-align: center;
 }
 .intro p {
   font-size: 25px;
   text-align: center;
-  height: 100%;
+  padding: 0 10% 0 10%;
 }
 
 /* cards */
@@ -139,11 +150,11 @@ footer {
   text-align: center;
 }
 
-/* clase */
+/* carousel */
 .container-carousel {
   display: flex;
   flex-direction: column;
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(223, 217, 217);
   min-height: 400px;
   max-height: 100%;
   word-wrap: break-word;
@@ -179,7 +190,7 @@ footer {
   height: 100%;
   position: absolute;
   opacity: 0;
-  animation: carousel 15s infinite linear;
+  animation: carousel 13s infinite linear;
   object-fit: cover;
 }
 .carousel .slide:nth-child(1) {
@@ -226,13 +237,18 @@ footer {
 }
 
 /* layout */
+/* servicios */
 .servicios-intro {
-  background-image: url("../assets/imges/servicios-intro.jpg");
-  align-items: center;
-  min-height: 600px;
-  color: black;
   background-size: cover;
+  min-height: 600px;
+  max-height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  color: black;
   word-wrap: break-word;
+  background-image: url("../assets/imges/servicios-intro.jpg");
+  animation: title-animation 7s forwards;
 }
 .servicios-intro h1 {
   font-size: 50px;
@@ -240,8 +256,8 @@ footer {
   text-align: center;
 }
 .servicios-intro p {
-  text-align: center;
   font-size: 25px;
+  text-align: center;
   padding: 0 10% 0 10%;
 }
 
@@ -273,14 +289,18 @@ footer {
   border-bottom: 1px solid black;
 }
 
+/* nosotros */
 .nosotros-intro {
-  background-image: url("../assets/imges/nosotros-intro.jpg");
-  align-items: center;
+  background-size: cover;
   min-height: 600px;
   max-height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
   color: black;
-  background-size: cover;
   word-wrap: break-word;
+  background-image: url("../assets/imges/nosotros-intro.jpg");
+  animation: title-animation 7s forwards;
 }
 .nosotros-intro h1 {
   font-size: 50px;
@@ -288,8 +308,8 @@ footer {
   text-align: center;
 }
 .nosotros-intro p {
-  text-align: center;
   font-size: 25px;
+  text-align: center;
   padding: 0 10% 0 10%;
 }
 
@@ -297,7 +317,7 @@ footer {
   min-height: 100%;
   max-height: 100%;
   background-color: rgb(223, 217, 217);
-  padding: 30px 10% 30px 10%;
+  padding: 30px 13% 30px 13%;
   gap: 100px;
 }
 
@@ -375,13 +395,16 @@ footer {
 
 /* galeria */
 .galeria-intro {
-  background-image: url("../assets/imges/galeria-intro.jpg");
-  align-items: center;
+  background-size: cover;
   min-height: 600px;
   max-height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
   color: black;
-  background-size: cover;
   word-wrap: break-word;
+  background-image: url("../assets/imges/galeria-intro.jpg");
+  animation: title-animation 7s forwards;
 }
 .galeria-intro h1 {
   font-size: 50px;
@@ -389,8 +412,8 @@ footer {
   text-align: center;
 }
 .galeria-intro p {
-  text-align: center;
   font-size: 25px;
+  text-align: center;
   padding: 0 10% 0 10%;
 }
 
@@ -417,13 +440,16 @@ footer {
 
 /* contacto */
 .contacto-intro {
-  background-image: url("../assets/imges/contacto-intro.jpg");
-  align-items: center;
+  background-size: cover;
   min-height: 600px;
   max-height: 100%;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
   color: black;
-  background-size: cover;
   word-wrap: break-word;
+  background-image: url("../assets/imges/contacto-intro.jpg");
+  animation: title-animation 7s forwards;
 }
 .contacto-intro h1 {
   font-size: 50px;
@@ -431,8 +457,8 @@ footer {
   text-align: center;
 }
 .contacto-intro p {
-  text-align: center;
   font-size: 25px;
+  text-align: center;
   padding: 0 10% 0 10%;
 }
 
@@ -501,16 +527,28 @@ footer {
   .servicios .servicios-box {
     min-height: 100%;
     max-height: 100%;
-    width: 300px;
+    width: 270px;
   }
 }
 /* 1023 */
 @media (min-width: 1023px) {
+  .intro-order h1, .nosotros-intro h1, .servicios-intro h1, .galeria-intro h1, .contacto-intro h1 {
+    padding: 30px 10% 0 5%;
+    text-align: left;
+  }
+  .intro-order p, .nosotros-intro p, .servicios-intro p, .galeria-intro p, .contacto-intro p {
+    width: 800px;
+    text-align: left;
+  }
   /* navbar - navtop */
   .nav-top {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px 50px 15px 50px;
+  }
+  .nav-top svg {
+    width: 18px;
+    height: 18px;
   }
   .nav-top-list {
     flex-direction: row;
@@ -538,38 +576,6 @@ footer {
     font-size: 25px;
     padding: 0 10% 0 10%;
   }
-  .contacto-intro h1 {
-    padding: 30px 10% 0 5%;
-    text-align: left;
-  }
-  .contacto-intro p {
-    width: 800px;
-    text-align: left;
-  }
-  .galeria-intro h1 {
-    padding: 30px 10% 0 5%;
-    text-align: left;
-  }
-  .galeria-intro p {
-    width: 800px;
-    text-align: left;
-  }
-  .servicios-intro h1 {
-    padding: 30px 10% 0 5%;
-    text-align: left;
-  }
-  .servicios-intro p {
-    width: 800px;
-    text-align: left;
-  }
-  .nosotros-intro h1 {
-    padding: 30px 10% 0 5%;
-    text-align: left;
-  }
-  .nosotros-intro p {
-    text-align: left;
-    width: 800px;
-  }
   .container-carousel {
     align-items: center;
     padding: 30px;
@@ -596,47 +602,19 @@ footer {
   }
   /* nosotros */
   .nosotros-box {
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: stretch;
   }
   .nosotros-box-reverse {
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: row-reverse;
     align-items: stretch;
   }
-  .nosotros-texto {
-    text-align: center;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .logo-imagen {
-    width: 50%;
-    height: 100%;
-  }
-  .logo-imagen img {
-    width: 100%;
-    height: 100%;
-  }
-  .equipo-texto {
-    text-align: center;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .equipo-imagen {
-    width: 50%;
-    height: 100%;
-  }
-  .equipo-imagen img {
-    width: 100%;
-    height: 100%;
-  }
+  .nosotros-texto,
+  .equipo-texto,
   .centro-texto {
     text-align: center;
     width: 50%;
@@ -644,10 +622,14 @@ footer {
     flex-direction: column;
     justify-content: center;
   }
+  .logo-imagen,
+  .equipo-imagen,
   .centro-imagen {
     width: 50%;
     height: 100%;
   }
+  .logo-imagen img,
+  .equipo-imagen img,
   .centro-imagen img {
     width: 100%;
     height: 100%;
@@ -663,7 +645,7 @@ footer {
     flex-direction: row-reverse;
     justify-content: center;
     font-size: 20px;
-    padding: 30px 10% 30px 10%;
+    padding: 30px 13.5% 30px 13.5%;
     gap: 20px;
     align-items: center;
   }
@@ -715,53 +697,14 @@ footer {
     font-size: 20px;
     text-align: center;
   }
-  .intro-servicios {
-    text-align: left;
-    padding: 30px 0 30px 50px;
-  }
   /* servicios */
   .servicios {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-  }
-  .servicios .servicios-box {
-    text-align: left;
-    width: 300px;
   }
   /* nosotros */
-  .nosotros-container {
-    padding: 30px 13% 30px 13%;
-  }
-  .nosotros-box {
-    height: 100%;
-    width: 100%;
-    flex-direction: row;
-    align-items: stretch;
-  }
-  .nosotros-box-reverse {
-    height: 400px;
-    flex-direction: row-reverse;
-    align-items: stretch;
-  }
-  .nosotros-texto {
-    text-align: center;
-    width: 50%;
-  }
-  .logo-imagen {
-    width: 50%;
-    height: 100%;
-  }
-  .equipo-texto {
-    width: 50%;
-  }
-  .equipo-imagen {
-    width: 50%;
-  }
-  .centro-texto {
-    width: 50%;
-  }
+  .equipo-texto,
+  .equipo-imagen,
+  .centro-texto,
   .centro-imagen {
     width: 50%;
   }
@@ -772,29 +715,7 @@ footer {
   .expand {
     grid-column: span 2;
   }
-  /* contacto */
-  .mapa {
-    min-height: 400px;
-    max-height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    font-size: 20px;
-    padding: 30px 13.5% 30px 13.5%;
-    align-items: center;
-  }
-  .mapa h3 {
-    padding: 0px;
-  }
-  .mapa iframe {
-    width: 100%;
-    height: 400px;
-  }
-  .mapa ul {
-    width: 100%;
-    list-style: none;
-    text-align: center;
-  }
+  /* carousel */
   .carousel {
     height: 400px;
     width: 700px;

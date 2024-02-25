@@ -1,32 +1,16 @@
+/* nosotros */
+
 .nosotros-intro {
+  @include intro-banner;
   background-image: url('../assets/imges/nosotros-intro.jpg');
-  align-items: center;
-  min-height: 600px;
-  max-height: 100%;
-  color: black;
-  background-size: cover;
-  word-wrap: break-word;  
-
-  h1 {
-    font-size: 50px;
-    padding: 30px 10% 0 10%;
-    text-align: center;
- 
-  }
-
-  p {
-    text-align: center;
-    font-size: 25px;
-    padding: 0 10% 0 10%;
-
-  }
+  animation: $animation-title;
 }
 
 .nosotros-container {
     min-height: 100%;
     max-height: 100%;
-    background-color: rgb(223, 217, 217);
-    padding: 30px 10% 30px 10%;
+    background-color: $color-container;
+    padding: 30px 13% 30px 13%;
     gap: 100px;
   }
 

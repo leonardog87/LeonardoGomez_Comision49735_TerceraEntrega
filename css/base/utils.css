@@ -1,8 +1,10 @@
-.intro-servicios {
-  text-align: left;
-}
-.intro-servicios h2 {
-  text-align: left;
+@keyframes title-animation {
+  from {
+    color: transparent;
+  }
+  to {
+    color: black;
+  }
 }
 
 /*# sourceMappingURL=utils.css.map */

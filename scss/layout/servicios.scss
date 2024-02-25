@@ -1,26 +1,13 @@
+/* servicios */
+
 .servicios-intro {
+  @include intro-banner;
   background-image: url('../assets/imges/servicios-intro.jpg');
-  align-items: center;
-  min-height: 600px;
-  color: black;
-  background-size: cover;
-  word-wrap: break-word;
-
-  h1 {
-    font-size: 50px;
-    padding: 30px 10% 0 10%;
-    text-align: center;
-  }
-
-  p {
-    text-align: center;
-    font-size: 25px;
-    padding: 0 10% 0 10%;
-  }
+  animation: $animation-title;
 }
 
 .servicios {  
-  background-color: rgb(223, 217, 217);
+  background-color: $color-container;
   color: rgba(0, 0, 0, 0.685);  
   gap: 50px;
   padding: 30px 10% 30px 10%;
@@ -37,12 +24,10 @@
   width: 100%;
   word-wrap: break-word;
   font-size: 20px ;
-  transition: 0.2s;
-  
+  transition: 0.2s;  
 
   &:hover {
-    color:black;
-    
+    color:black;    
   }
   
   h2 {

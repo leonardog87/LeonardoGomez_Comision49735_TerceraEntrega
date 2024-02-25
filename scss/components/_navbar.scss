@@ -17,7 +17,7 @@
     background: linear-gradient(black, black);
     background-position: 0 100%;
     background-repeat: no-repeat;
-    background-size: 0% 10%;
+    background-size: 0 10%;
     transition: background-size 1s;
     &:hover {
       background-size: 100% 10%;

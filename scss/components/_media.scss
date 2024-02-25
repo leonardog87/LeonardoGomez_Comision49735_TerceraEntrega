@@ -42,7 +42,7 @@
     .servicios-box {
       min-height: 100%;
       max-height: 100%;
-      width: 300px;
+      width: 270px;
     }
   }
 }
@@ -51,12 +51,30 @@
 
 @media (min-width:1023px) {
 
+  .intro-order {
+    h1 {
+      padding: 30px 10% 0 5%;
+      text-align: left;
+    }
+
+    p {
+      width: 800px;
+      text-align: left;
+    }
+  }
+
+
   /* navbar - navtop */
 
   .nav-top {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px 50px 15px 50px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   .nav-top-list {
@@ -92,57 +110,20 @@
   }
 
   .contacto-intro {
-    h1 {
-      padding: 30px 10% 0 5%;
-      text-align: left;
-    }
-
-    p {
-      width: 800px;
-      text-align: left;
-    }
+    @extend .intro-order;
   }
 
   .galeria-intro {
-    h1 {
-      padding: 30px 10% 0 5%;
-      text-align: left;
-    }
-
-    p {
-      width: 800px;
-      text-align: left;
-    }
+    @extend .intro-order;
   }
 
   .servicios-intro {
-    h1 {
-      padding: 30px 10% 0 5%;
-      text-align: left;
-    }
-
-    p {
-      width: 800px;
-      text-align: left;
-    }
-  }
-
-  .nosotros-intro {
-    h1 {
-      padding: 30px 10% 0 5%;
-      text-align: left;
-    }
-
-    p {
-      text-align: left;
-      width: 800px;
-    }
+    @extend .intro-order;
   }
 
   .container-carousel {
     align-items: center;
     padding: 30px;
-
 
     img {
       height: 400px;
@@ -173,8 +154,12 @@
 
   /* nosotros */
 
+  .nosotros-intro {
+    @extend .intro-order;
+  }
+
   .nosotros-box {
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -182,60 +167,24 @@
   }
 
   .nosotros-box-reverse {
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: row-reverse;
     align-items: stretch;
-
   }
 
-  .nosotros-texto {
-    text-align: center;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .logo-imagen {
-    width: 50%;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-
-  .equipo-texto {
-    text-align: center;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .equipo-imagen {
-    width: 50%;
-    height: 100%;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-
+  .nosotros-texto,
+  .equipo-texto,
   .centro-texto {
     text-align: center;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
+  .logo-imagen,
+  .equipo-imagen,
   .centro-imagen {
     width: 50%;
     height: 100%;
@@ -259,7 +208,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     font-size: 20px;
-    padding: 30px 10% 30px 10%;
+    padding: 30px 13.5% 30px 13.5%;
     gap: 20px;
     align-items: center;
 
@@ -278,9 +227,7 @@
       text-align: center;
     }
   }
-
 }
-
 
 /* 1200*/
 
@@ -329,68 +276,17 @@
     }
   }
 
-  .intro-servicios {
-    text-align: left;
-    padding: 30px 0 30px 50px;
-  }
-
   /* servicios */
 
   .servicios {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-
-    .servicios-box {
-      text-align: left;
-      width: 300px;
-    }
   }
 
   /* nosotros */
 
-  .nosotros-container {
-    padding: 30px 13% 30px 13%;
-  }
-
-  .nosotros-box {
-    height: 100%;
-    width: 100%;
-    flex-direction: row;
-    align-items: stretch;
-  }
-
-  .nosotros-box-reverse {
-    height: 400px;
-    flex-direction: row-reverse;
-    align-items: stretch;
-
-  }
-
-  .nosotros-texto {
-    text-align: center;
-    width: 50%;
-  }
-
-  .logo-imagen {
-    width: 50%;
-    height: 100%;
-  }
-
-
-  .equipo-texto {
-    width: 50%;
-  }
-
-  .equipo-imagen {
-    width: 50%;
-  }
-
-  .centro-texto {
-    width: 50%;
-  }
-
+  .equipo-texto,
+  .equipo-imagen,
+  .centro-texto,
   .centro-imagen {
     width: 50%;
   }
@@ -405,37 +301,10 @@
     grid-column: span 2;
   }
 
-  /* contacto */
-
-  .mapa {
-    min-height: 400px;
-    max-height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    font-size: 20px;
-    padding: 30px 13.5% 30px 13.5%;
-    align-items: center;
-
-    h3 {
-      padding: 0px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 400px;
-    }
-
-    ul {
-      width: 100%;
-      list-style: none;
-      text-align: center;
-    }
-  }
+  /* carousel */
 
   .carousel {
     height: 400px;
     width: 700px;
   }
-
 }
